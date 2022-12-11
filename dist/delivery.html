@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Доставка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__scroll-wrapper">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__top-location" data-da=".header__menu-list, 768">Москва</div>
+              <a class="header__top-phone" href="tel:79296228880">+7 929 622 88 80</a>
+              <div class="header__top-schedule" data-da=".header__menu-list, 480">Пн-Вс с 10.00 до 20.00</div>
+              <a class="header__top-email" href="mailto:mask@mail.com" data-da=".header__menu-list, 768">mask@mail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <a class="logo" href="index.html" data-da=".header__top-inner, 480, first"><img src="images/logo.svg" alt="Логотип 3маски" /></a>
+              <nav class="header__menu">
+                <div class="menu-close">
+                  <span></span>
+                  <span></span>
+                </div>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#catalog">Каталог</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="delivery.html">Доставка</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="wholesale.html">ОПТ</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="contacts.html">Контакты</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="guard.html">Что защищает?</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__actions-inner">
+                <div class="header__cart-wrapper">
+                  <a class="header__cart" href=""
+                    ><img src="images/cart.svg" alt="" /> <span class="cart__qty">0</span> <span class="cart__total"><span>0</span> ₽</span></a
+                  >
+                  <div class="header__cart-inner">
+                    <div class="header__cart-title">Корзина пуста! Добавьте что-нибудь в корзину</div>
+                    <ul class="header__cart-list" id="products-container"></ul>
+                    <div class="header__cart-bottom">
+                      <div class="header__cart-price-info">
+                        <div class="header__cart-price-text">Итого:</div>
+                        <div class="header__cart-totalprice"><span>0</span> ₽</div>
+                      </div>
+                      <a href="" class="header__cart-button button">Перейти в корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <a class="header__favourite" href=""
+                  ><img src="images/favourite.svg" alt="Иконка избранное" /><span class="favourite__qty">0</span></a
+                >
+              </div>
+              <a
+                class="header__getphonecallbutton button"
+                href=""
+                data-da=".header__menu-list, 768"
+                data-fancybox
+                data-src="#request-modal"
+                data-options='{"touch" : false}'
+                >Заказать звонок</a
+              >
+              <div class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="delivery">
+        <div class="container">
+          <div class="delivery__title-inner"><h2 class="delivery__title title">Условия доставки и самовывоза</h2></div>
+          <div class="delivery__list section-list">
+            <div class="delivery__item section-item">
+              <div class="delivery__item-number item-number">01</div>
+              <div class="delivery__item-box item-box">
+                <div class="delivery__item-title">Доставка</div>
+                <ul class="delivery__item-text-list">
+                  <li class="delivery__item-text">В пределах МКАД — <span>350 ₽.</span></li>
+                  <li class="delivery__item-text">За пределами МКАД — <span>350 ₽ + 25 ₽/км.</span></li>
+                  <li class="delivery__item-text">В Мытищи и Королев мы доставляем бесплатно, минимальная сумма заказа <span>1000₽.</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="delivery__item section-item">
+              <div class="delivery__item-number item-number">02</div>
+              <div class="delivery__item-box item-box">
+                <div class="delivery__item-title">Самовывоз</div>
+                <ul class="delivery__item-text-list">
+                  <li class="delivery__item-text">Вы можете забрать нужный вам товар в нашем офисе — <span>бесплатно</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="delivery__item section-item">
+              <div class="delivery__item-number item-number">03</div>
+              <div class="delivery__item-box item-box">
+                <div class="delivery__item-title">По России</div>
+                <ul class="delivery__item-text-list">
+                  <li class="delivery__item-text">
+                    Доставка осуществляется через транспортную компанию по выбору клиента отгрузка товара осуществляется в течении
+                    <span>15 минут.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="delivery__map map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1580.931138241905!2d37.76320194213336!3d55.91861450966623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53193f4fd9d81%3A0xab3b6193a8bad1dc!2z0KjQsNGA0LDQv9C-0LLRgdC60LjQuSDQv9GALdC0LCA3LCDQnNGL0YLQuNGJ0LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTQxMDA5!5e0!3m2!1sru!2skz!4v1659779894408!5m2!1sru!2skz"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+            <div class="delivery__modal request-modal">
+              <div class="delivery__modal-title request-modal__title title">Закажите звонок</div>
+              <div class="delivery__modal-subtitle request-modal__subtitle">Прямо сейчас</div>
+              <form id="phone-form-map" action="">
+                <div class="input-inner"><input type="text" name="name" placeholder="Ваше имя" /></div>
+                <div class="input-inner"><input type="text" name="phone" class="input-phone phone" placeholder="Ваш телефон" /></div>
+                <div class="delivery__button"><button class="button" type="submit">Заказать</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <h3 class="footer__title title">Контакты</h3>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-item-name">Наш адрес</div>
+                <address class="footer__contacts-item-text address">
+                  Московская обл., Мытищи, Шараповский пр-д, 7 Санкт-Петербург, ул.Федора Абрамова, д.18
+                </address>
+              </li>
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-item-name">Наш телефон</div>
+                <a href="tel:84993227655" class="footer__contacts-item-text">8 (499) 322-76-55</a>
+              </li>
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-item-name">Наша почта</div>
+                <a class="footer__contacts-item-text" href="mailto:info@3maski.ru">info@3maski.ru</a>
+              </li>
+            </ul>
+            <div class="footer__payments"><img src="images/payments.png" alt="Способы оплаты" /></div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title title">О магазине</h3>
+            <p class="footer__text">
+              Специализированный магазин сертифицированных, оригинальных защитных материалов для органов дыхания и защиты от вируса COVID-19
+            </p>
+            <div class="footer__owner-box">
+              <div class="footer__owner-name">ИП Седов Алексей Александрович</div>
+              <p class="footer__owner-text">
+                Для документов: 141018, Московская обл., г. Мытищи, ул. Лётная, 21/2, кв. 237 (только простыми письмами) Свидетельство о гос.
+                регистрации 37003766773 ИНН 344692125024 ОГРНИП 312346007200046
+              </p>
+            </div>
+          </div>
+          <div class="footer__column">
+            <img src="images/footer-img-01.png" alt="Лучший сетевой магазин России" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="request-modal" style="display: none" id="request-modal">
+      <div class="request-modal__title">Закажите звонок</div>
+      <div class="request-modal__subtitle">Прямо сейчас</div>
+      <form id="phone-form" action="">
+        <div class="input-inner"><input type="text" name="name" placeholder="Ваше имя" /></div>
+        <div class="input-inner"><input type="text" class="input-phone" name="phone" placeholder="Ваш телефон" /></div>
+        <button class="button" type="submit">Заказать</button>
+      </form>
+    </div>
+    <div class="video-modal" style="display: none" id="video-modal">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ZfBufFQxvoc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

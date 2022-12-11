@@ -1,0 +1,112 @@
+.footer {
+  background-color: #ebebed;
+  padding: 50px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  &__column {
+    &:not(:last-child) {
+      max-width: 500px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__contacts-item {
+    max-width: 400px;
+    &:first-child {
+      .footer__contacts-item-name {
+        background-image: url(../images/map-marker.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 21px;
+      }
+    }
+
+    &:nth-child(2) {
+      .footer__contacts-item-name {
+        background-image: url(../images/phone.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 21px;
+      }
+      .footer__contacts-item-text {
+        transition: opacity 0.3s;
+        @media (any-hover: hover) {
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      .footer__contacts-item-name {
+        background-image: url(../images/email.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 21px;
+      }
+      .footer__contacts-item-text {
+        transition: opacity 0.3s;
+        @media (any-hover: hover) {
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  &__contacts-item-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 5px;
+  }
+
+  &__contacts-item-text {
+    padding-left: 21px;
+    color: #676767;
+  }
+
+  &__payments {
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__owner-box {
+  }
+
+  &__owner-name {
+    padding-left: 20px;
+    background-image: url(../images/user.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-bottom: 5px;
+  }
+
+  &__owner-text {
+    padding-left: 20px;
+    color: #676767;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

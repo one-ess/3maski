@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Маски-респираторы</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__scroll-wrapper">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__top-location" data-da=".header__menu-list, 768">Москва</div>
+              <a class="header__top-phone" href="tel:79296228880">+7 929 622 88 80</a>
+              <div class="header__top-schedule" data-da=".header__menu-list, 480">Пн-Вс с 10.00 до 20.00</div>
+              <a class="header__top-email" href="mailto:mask@mail.com" data-da=".header__menu-list, 768">mask@mail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <a class="logo" href="index.html" data-da=".header__top-inner, 480, first"><img src="images/logo.svg" alt="Логотип 3маски" /></a>
+              <nav class="header__menu">
+                <div class="menu-close">
+                  <span></span>
+                  <span></span>
+                </div>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#catalog">Каталог</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="delivery.html">Доставка</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="wholesale.html">ОПТ</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="contacts.html">Контакты</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="guard.html">Что защищает?</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__actions-inner">
+                <div class="header__cart-wrapper">
+                  <a class="header__cart" href=""
+                    ><img src="images/cart.svg" alt="Иконка корзины" /> <span class="cart__qty">0</span>
+                    <span class="cart__total"><span>0</span> ₽</span></a
+                  >
+                  <div class="header__cart-inner">
+                    <div class="header__cart-title">Корзина пуста! Добавьте что-нибудь в корзину</div>
+                    <ul class="header__cart-list" id="products-container"></ul>
+                    <div class="header__cart-bottom">
+                      <div class="header__cart-price-info">
+                        <div class="header__cart-price-text">Итого:</div>
+                        <div class="header__cart-totalprice"><span>0</span> ₽</div>
+                      </div>
+                      <a href="" class="header__cart-button button">Перейти в корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <a class="header__favourite" href="#"
+                  ><img src="images/favourite.svg" alt="Иконка избранное" /><span class="favourite__qty">0</span></a
+                >
+              </div>
+              <a
+                class="header__getphonecallbutton button"
+                href=""
+                data-da=".header__menu-list, 768"
+                data-fancybox
+                data-src="#request-modal"
+                data-options='{"touch" : false}'
+                >Заказать звонок</a
+              >
+              <div class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="presentation">
+        <div class="container">
+          <div class="presentation__inner">
+            <div class="presentation__column">
+              <h1 class="presentation__title">
+                Сертифицированные <br />
+                <span>Маски-респираторы</span>
+              </h1>
+              <div class="presentation__text">В наличии с доставкой за 2 часа и оплатой по факту получения</div>
+              <div class="presentation__list">
+                <div class="presentation__item">
+                  <div class="presentation__item-image">
+                    <img src="images/truck.svg" alt="Иконка грузовика" />
+                  </div>
+                  <div class="presentation__info">
+                    <div class="presentation__item-name">Самовывоз и отгрузки</div>
+                    <div class="presentation__item-text">Обладая фирменным магазином, предоставляем возможность осуществить самовывоз.</div>
+                  </div>
+                </div>
+                <div class="presentation__item">
+                  <div class="presentation__item-image">
+                    <img src="images/coins.svg" alt="Иконка монет" />
+                  </div>
+                  <div class="presentation__info">
+                    <div class="presentation__item-name">Лучшие цены, оптовые продажи</div>
+                    <div class="presentation__item-text">Являемся прямым импортером и производителем.</div>
+                  </div>
+                </div>
+                <div class="presentation__item">
+                  <div class="presentation__item-image">
+                    <img src="images/mask.svg" alt="Иконка маски" />
+                  </div>
+                  <div class="presentation__info">
+                    <div class="presentation__item-name">Оригинальная продукция</div>
+                    <div class="presentation__item-text">
+                      Каждый респиратор имеет сертификат соответствия, что доказывает оригинальность продукции.
+                    </div>
+                  </div>
+                </div>
+                <div class="presentation__item">
+                  <div class="presentation__item-image">
+                    <img src="images/guard.svg" alt="Иконка щита" />
+                  </div>
+                  <div class="presentation__info">
+                    <div class="presentation__item-name">Защита до 99%</div>
+                    <div class="presentation__item-text">
+                      Респираторы применяются как при защите от COVID-19, так и в производственных и строительных целях.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="presentation__checkout-link" href="#">Ознакомьтесь с нашим коммерческим предложением 3Маски КП</a>
+              <div class="presentation__buttons">
+                <a class="presentation__catalog-link button" href="#catalog">Перейти в каталог</a>
+                <a class="presentation__video-link" href="" data-fancybox data-src="#video-modal" data-options='{"touch" : false}'
+                  >Смотреть видео-презентацию</a
+                >
+              </div>
+            </div>
+            <div class="presentation__column">
+              <div class="presentation__image"><img src="images/main-img.jpg" alt="Фото людей в масках" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog" id="catalog">
+        <div class="container">
+          <div class="catalog__title-inner">
+            <h2 class="catalog__title title">Каталог в наличии</h2>
+          </div>
+
+          <div class="catalog__slider tabs">
+            <div class="catalog__slider-item">
+              <a class="catalog__tab _active" href="#all">Все товары</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#respirators">Респираторы</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#slippers">Тапочки</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#screens">Экраны</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#antiseptic">Антисептик</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#">Spirotek</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#">FFP1</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#">FFP2</a>
+            </div>
+            <div class="catalog__slider-item">
+              <a class="catalog__tab" href="#">FFP3</a>
+            </div>
+          </div>
+
+          <div class="catalog__products">
+            <div class="catalog__products-inner _active" id="all">
+              <div class="catalog__product" data-id="1">
+                <div class="catalog__product-image"><img src="images/product-img-01.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор (маска) KN95 FFP2 без клапана</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>70</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>325</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>600</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="2">
+                <div class="catalog__product-image"><img src="images/product-img-02.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор (маска) KN95 FFP2</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>80</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>750</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>100 шт. <span>7 000</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="3">
+                <div class="catalog__product-image"><img src="images/product-img-03.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор (маска) KN95 Черный FFP2</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>85</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>400</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>750</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="4">
+                <div class="catalog__product-image"><img src="images/product-img-04.png" alt="Тапочки" /></div>
+                <div class="catalog__product-title">Тапочки одноразовые спанбонд/прозрачные/черные</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 уп. (1 пара) <span>100</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="5">
+                <div class="catalog__product-image"><img src="images/product-img-05.png" alt="Тапочки" /></div>
+                <div class="catalog__product-title">Тапочки Махровые Оптима Плюс, одноразовые</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 уп. (1 пара) <span>80</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="6">
+                <div class="catalog__product-image"><img src="images/product-img-06.png" alt="Антисептический гель" /></div>
+                <div class="catalog__product-title">Антисептический гель Septel (50 мл.)</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>140</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>645</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="7">
+                <div class="catalog__product-image"><img src="images/product-img-07.png" alt="Экран защитный" /></div>
+                <div class="catalog__product-title">Экран защитный для лица</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>149</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>700</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="8">
+                <div class="catalog__product-image"><img src="images/product-img-08.png" alt="Антисептический спрей" /></div>
+                <div class="catalog__product-title">Sanitizer антисептический спрей (50 мл.)</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>150</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>700</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="9">
+                <div class="catalog__product-image"><img src="images/product-img-09.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор детский KN95 FFP2 Кitten blue</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>150</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>700</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+            </div>
+            <div class="catalog__products-inner" id="respirators">
+              <div class="catalog__product" data-id="1">
+                <div class="catalog__product-image"><img src="images/product-img-01.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор (маска) KN95 FFP2 без клапана</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>70</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>325</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>600</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="2">
+                <div class="catalog__product-image"><img src="images/product-img-02.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор (маска) KN95 FFP2</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>80</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>750</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>100 шт. <span>7 000</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="3">
+                <div class="catalog__product-image"><img src="images/product-img-03.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор (маска) KN95 Черный FFP2</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>85</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>400</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>750</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="9">
+                <div class="catalog__product-image"><img src="images/product-img-09.png" alt="Респиратор" /></div>
+                <div class="catalog__product-title">Респиратор детский KN95 FFP2 Кitten blue</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>150</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>700</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+            </div>
+            <div class="catalog__products-inner" id="slippers">
+              <div class="catalog__product" data-id="4">
+                <div class="catalog__product-image"><img src="images/product-img-04.png" alt="Тапочки" /></div>
+                <div class="catalog__product-title">Тапочки одноразовые спанбонд/прозрачные/черные</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 уп. (1 пара) <span>100</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="5">
+                <div class="catalog__product-image"><img src="images/product-img-05.png" alt="Тапочки" /></div>
+                <div class="catalog__product-title">Тапочки Махровые Оптима Плюс, одноразовые</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 уп. (1 пара) <span>80</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+            </div>
+            <div class="catalog__products-inner" id="screens">
+              <div class="catalog__product" data-id="7">
+                <div class="catalog__product-image"><img src="images/product-img-07.png" alt="Экран защитный" /></div>
+                <div class="catalog__product-title">Экран защитный для лица</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>149</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>700</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+            </div>
+            <div class="catalog__products-inner" id="antiseptic">
+              <div class="catalog__product" data-id="6">
+                <div class="catalog__product-image"><img src="images/product-img-06.png" alt="Антисептический гель" /></div>
+                <div class="catalog__product-title">Антисептический гель Septel (50 мл.)</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>140</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>645</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+              <div class="catalog__product" data-id="8">
+                <div class="catalog__product-image"><img src="images/product-img-08.png" alt="Антисептический спрей" /></div>
+                <div class="catalog__product-title">Sanitizer антисептический спрей (50 мл.)</div>
+                <form class="product-form" action="">
+                  <div class="catalog__button-radio-inner">
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" checked="checked" />
+                        <span></span>
+                        <p>1 шт. <span>150</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>5 шт. <span>700</span> ₽</p>
+                      </label>
+                    </div>
+                    <div class="label-inner">
+                      <label>
+                        <input type="radio" name="radio" />
+                        <span></span>
+                        <p>10 шт. <span>1 300</span> ₽</p>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button cart__button">В корзину</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container">
+          <div class="info__content-inner">
+            <ul class="info__content-list">
+              <li class="info__content-item">
+                <h4 class="info__content-item-title">Защита от пыли и микробов</h4>
+                <p class="info__content-item-text">
+                  Складная 3-х панельная конструкция обеспечивает надежное прилегание респиратора 3М для различных типов и форм лица, маска
+                  приспосабливается к движениям лица и устойчива к смятию.
+                </p>
+              </li>
+              <li class="info__content-item">
+                <h4 class="info__content-item-title">Производство Великобритания (UK)</h4>
+                <p class="info__content-item-text">Продукция высочайшего качества от известного во всём мире бренда.</p>
+              </li>
+              <li class="info__content-item">
+                <h4 class="info__content-item-title">FFP2 и FFP3</h4>
+                <p class="info__content-item-text">
+                  Наши респираторы обладают клапанами с наивысшими уровнями защиты. Очистка вдыхаемого воздуха до 99%.
+                </p>
+              </li>
+            </ul>
+            <div class="info__video">
+              <iframe
+                src="https://www.youtube.com/embed/5hPhsytL2vQ"
+                title="Чем отличается FFP2 от FFP3. Как надевать респиратор"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="info__video">
+              <iframe
+                src="https://www.youtube.com/embed/qD22-PfWKVI"
+                title="Презентация завода NewBorn"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <ul class="info__content-list">
+              <li class="info__content-item">
+                <h4 class="info__content-item-title">Работа по договору</h4>
+                <p class="info__content-item-text">Заключаем договор поставки продукции в нуждающиеся учреждения.</p>
+              </li>
+              <li class="info__content-item">
+                <h4 class="info__content-item-title">Всегда в наличии</h4>
+                <p class="info__content-item-text">Собственный склад гарантирует наличие продукции и самовывоз для наших клиентов.</p>
+              </li>
+              <li class="info__content-item">
+                <h4 class="info__content-item-title">Организуем поставку</h4>
+                <p class="info__content-item-text">
+                  Вы можете оставить предварительный заказ на нужное наименование продукции и его количество, а мы организуем поставку.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="wholesale main">
+        <div class="container">
+          <div class="wholesale__inner">
+            <div class="wholesale__content-box">
+              <h2 class="wholesale__title title">Крупный И Мелкий Опт</h2>
+              <div class="wholesale__subtitle">Гарантия лучшей цены</div>
+              <p class="wholesale__text">
+                Ознакомьтесь с <a class="wholesale__link" href="#">Коммерческим предложением 3МАСКИ</a>. Являемся прямым импортером. Предоставим
+                лучшие цены по любому объему, а так же работаем с НДС и без НДС. Для согласования скидок обратитесь к нашим менеджерам
+              </p>
+              <div class="wholesale__button" data-da=".wholesale__inner, 1100, last">
+                <a class="button" data-fancybox data-src="#request-modal" data-options='{"touch" : false}' href="#">Заказать</a>
+              </div>
+            </div>
+            <div class="wholesale__image"><img src="images/wholesale-img-01.jpg" alt="Фото людей в масках" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="gratitude">
+        <div class="container">
+          <h2 class="gratitude__title title">Благодарственные письма</h2>
+          <div class="gratitude__subtitle">О нас говорят только хорошее</div>
+          <div class="gratitude__slider">
+            <div class="gratitude__slider-item">
+              <a class="gratitude__image-link" href="images/thank-you-letter-img-01.jpg" data-fancybox="gallery" data-options='{"touch" : false}'
+                ><img src="images/thank-you-letter-img-01.jpg" alt="Благодарственное письмо"
+              /></a>
+            </div>
+            <div class="gratitude__slider-item">
+              <a class="gratitude__image-link" href="images/thank-you-letter-img-01.jpg" data-fancybox="gallery" data-options='{"touch" : false}'
+                ><img src="images/thank-you-letter-img-01.jpg" alt="Благодарственное письмо"
+              /></a>
+            </div>
+            <div class="gratitude__slider-item">
+              <a class="gratitude__image-link" href="images/thank-you-letter-img-01.jpg" data-fancybox="gallery" data-options='{"touch" : false}'
+                ><img src="images/thank-you-letter-img-01.jpg" alt="Благодарственное письмо"
+              /></a>
+            </div>
+            <div class="gratitude__slider-item">
+              <a class="gratitude__image-link" href="images/thank-you-letter-img-01.jpg" data-fancybox="gallery" data-options='{"touch" : false}'
+                ><img src="images/thank-you-letter-img-01.jpg" alt="Благодарственное письмо"
+              /></a>
+            </div>
+            <div class="gratitude__slider-item">
+              <a class="gratitude__image-link" href="images/thank-you-letter-img-01.jpg" data-fancybox="gallery" data-options='{"touch" : false}'
+                ><img src="images/thank-you-letter-img-01.jpg" alt="Благодарственное письмо"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="transfer">
+        <div class="container">
+          <div class="transfer__title-inner">
+            <h2 class="transfer__title title">Бесконтактная доставка с оплатой по факту</h2>
+            <div class="transfer__subtitle">Просто и удобно</div>
+          </div>
+          <div class="transfer__list section-list">
+            <div class="transfer__item section-item">
+              <div class="transfer__item-number item-number">01</div>
+              <div class="transfer__item-box item-box">
+                <div class="transfer__item-title">Заказ через сайт или по телефону</div>
+                <div class="transfer__item-text">Добавьте в корзину нужный вам товар или оформите заказ, позвонив на горячую линию</div>
+              </div>
+            </div>
+            <div class="transfer__item section-item">
+              <div class="transfer__item-number item-number">02</div>
+              <div class="transfer__item-box item-box">
+                <div class="transfer__item-title">Обработка заказа</div>
+                <div class="transfer__item-text">
+                  Менеджер обрабатывает заявку в течение 5 минут, для подтверждения заказа связывается с вами и уточняет точное количество, сроки и
+                  адрес поставки
+                </div>
+              </div>
+            </div>
+            <div class="transfer__item section-item">
+              <div class="transfer__item-number item-number">03</div>
+              <div class="transfer__item-box item-box">
+                <div class="transfer__item-title">Стоимость доставки курьером в пределах МКАД — 350р.</div>
+                <div class="transfer__item-text">
+                  Доставка в день заказа по Москве и области, отправляем ТП СДЭК в течении 30 минут вы получаете ТРЕК-НОМЕР отслеживания.
+                </div>
+              </div>
+            </div>
+            <div class="transfer__item section-item">
+              <div class="transfer__item-number item-number">04</div>
+              <div class="transfer__item-box item-box">
+                <div class="transfer__item-title">Получение и оплата</div>
+                <div class="transfer__item-text">Курьер привозит заказ в индивидуально запакованном курьерском пакете.</div>
+              </div>
+            </div>
+          </div>
+          <div class="transfer__button">
+            <a class="button" href="#" data-fancybox data-src="#request-modal" data-options='{"touch" : false}'>Заказать</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <h3 class="footer__title title">Контакты</h3>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-item-name">Наш адрес</div>
+                <address class="footer__contacts-item-text address">
+                  Московская обл., Мытищи, Шараповский пр-д, 7 Санкт-Петербург, ул.Федора Абрамова, д.18
+                </address>
+              </li>
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-item-name">Наш телефон</div>
+                <a href="tel:84993227655" class="footer__contacts-item-text">8 (499) 322-76-55</a>
+              </li>
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-item-name">Наша почта</div>
+                <a class="footer__contacts-item-text" href="mailto:info@3maski.ru">info@3maski.ru</a>
+              </li>
+            </ul>
+            <div class="footer__payments"><img src="images/payments.png" alt="Способы оплаты" /></div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title title">О магазине</h3>
+            <p class="footer__text">
+              Специализированный магазин сертифицированных, оригинальных защитных материалов для органов дыхания и защиты от вируса COVID-19
+            </p>
+            <div class="footer__owner-box">
+              <div class="footer__owner-name">ИП Седов Алексей Александрович</div>
+              <p class="footer__owner-text">
+                Для документов: 141018, Московская обл., г. Мытищи, ул. Лётная, 21/2, кв. 237 (только простыми письмами) Свидетельство о гос.
+                регистрации 37003766773 ИНН 344692125024 ОГРНИП 312346007200046
+              </p>
+            </div>
+          </div>
+          <div class="footer__column">
+            <img src="images/footer-img-01.png" alt="Лучший сетевой магазин России" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="video-modal" style="display: none" id="video-modal">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ZfBufFQxvoc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="request-modal" style="display: none" id="request-modal">
+      <div class="request-modal__title">Закажите звонок</div>
+      <div class="request-modal__subtitle">Прямо сейчас</div>
+      <form id="phone-form" action="">
+        <div class="input-inner"><input type="text" name="name" placeholder="Ваше имя" /></div>
+        <div class="input-inner"><input type="text" class="input-phone" name="phone" placeholder="Ваш телефон" /></div>
+        <button class="button" type="submit">Заказать</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
